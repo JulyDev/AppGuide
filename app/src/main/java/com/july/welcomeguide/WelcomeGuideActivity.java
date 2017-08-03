@@ -185,6 +185,7 @@ public class WelcomeGuideActivity extends Activity
         {
             return null;
         }
+        //  注意这里要取缓存列表里的View，所以position范围只能是0,1,2,取模即可
         int pos = position % MAX_CACHE_COUNT;
         View view = viewList.get(pos);
         ViewHolder holder = (ViewHolder) view.getTag();
